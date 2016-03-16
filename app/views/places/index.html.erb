@@ -19,9 +19,20 @@
     </blockquote>
   </div>
 <% end %>
+
+<% if place.photos.present? %>
+<div class="col-xs-12">
+      <blockquote>
+        <b><%= place.photos.last.caption %></b>
+        <%= image_tag place.photos.last.picture, :class => 'img-responsive' %>
+      </blockquote>
+    </div>
+<% end %>
+
   </div>
 	<% end %>
 
 <div class = "pagination-wrapper digg_pagination">
   <%= will_paginate @places, :page_links => false %>
 </div>
+

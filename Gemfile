@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 gem 'will_paginate'
 gem "geocoder"
 gem "figaro", ">= 1.0.0"
+gem 'carrierwave'
+gem "fog", "~> 1.3.1"
 
 gem 'bootstrap-sass', '~> 3.3.5.1'
 gem 'sprockets', '2.11.0'
